@@ -9,11 +9,11 @@ resource "aws_instance" "terraform_instance1" {
 }
 
 
-resource "aws_s3_bucket" "b1" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "bucket1" {
+  bucket = "my-tf-test-bucket1"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My bucket1"
     Environment = "Dev"
   }
 }
